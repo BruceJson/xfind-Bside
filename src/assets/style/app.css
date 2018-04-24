@@ -1,0 +1,38 @@
+/*@import './root.css';*/
+
+body {
+	background-color: var(--mainColor);
+}
+
+.align_center{
+	text-align: center;
+}
+
+.test1{
+	--h1: 40px;
+	color: var(--altColor);
+	/*@apply .align_center;*/
+	& .test2{
+		color: green;
+		height: var(--h1);
+		background-color: #fff;
+		transition: all linear 1s;
+		animation: change linear 1s infinite;
+		/*&:hover{
+			background-color: var(--altColor);
+		};*/
+	}
+	@nest .active &{
+		color: blue;
+	}
+}
+
+@keyframes change{
+	0% {
+		background-color: var(--mainColor);
+	}
+
+	100%{
+		background-color: var(--altColor);
+	}
+}
