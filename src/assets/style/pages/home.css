@@ -59,7 +59,7 @@
                     text-align: center;
                     line-height: 1;
                     margin-top: 20px;
-                    color: var(--commonFontColor3);
+                    color: var(--commonFontColor2);
                 }
                 &:after {
                     content: '';
@@ -80,6 +80,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                margin-left: 20px;
                 &>.part2 {
                     margin-top: 10px;
                     & span {
