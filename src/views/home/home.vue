@@ -8,22 +8,25 @@
                         <p>小桔科技有限公司</p>
                     </div>
                     <div class='company_content'>
-                        <div>
-                            <p>1000</p>
-                            <p>余额</p>
+                        <div class='item'>
+                            <p class='p1'>1000</p>
+                            <p class='p2'>余额</p>
                         </div>
-                        <div>
-                            <p>500</p>
-                            <p>获得</p>
+                        <div class='item'>
+                            <p class='p1'>500</p>
+                            <p class='p2'>获得</p>
                         </div>
-                        <div>
-                            <p>200</p>
-                            <p>话费</p>
+                        <div class='item'>
+                            <p class='p1'>200</p>
+                            <p class='p2'>话费</p>
                         </div>
-                        <div>
-                            <button>充值</button>
-                            <p>
-                                <span>开票设置</span>|
+                        <div class='recharge_box'>
+                            <div class='part1 align_center'>
+                                <x-button class='xbtn xbtn_border xbtn_bradius' :padding='[10, 25]' :fontsize='16'>充值</x-button>
+                            </div>
+                            <p class='part2'>
+                                <span>开票设置</span>
+                                <span>|</span>
                                 <span>金币规则</span>
                             </p>
                         </div>
@@ -34,12 +37,14 @@
     </div>
 </template>
 <script type="text/javascript">
+import '@pages/home.css';
+
 export default {
     name: 'home'
 };
 
 </script>
 <style type="text/css">
-@import './home.css';
+
 
 </style>

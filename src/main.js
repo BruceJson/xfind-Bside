@@ -7,15 +7,12 @@ import iview from 'iview';
 // import 'iview/dist/styles/iview.css';
 Vue.use(iview);
 
+import comps from '@/components';
+Vue.use(comps);
+
 
 // css
-import '@/assets/fonts/iconfont/iconfont.css';
-import '@/assets/style/reset.css';
-import '@/assets/style/common.css';
-import '@/assets/style/theme.css';
-import '@/assets/style/app.css';
-
-// import '@/assets/style/main.css';
+import '@/assets/style/main.css';
 
 import router from './router'
 
