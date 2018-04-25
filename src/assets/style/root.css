@@ -1,6 +1,7 @@
 :root {
-	--mainColor: gray;
-	--test1: green;
-	--test2: blue;
-	--px1: 30px;
+    --commonFontColor: #666666;
+    --commonFontColor1: #333333;
+    --commonFontColor2: #999999;
+    --mainColor: #008CEE;
+    --contentWidth: 1200px;
 }
