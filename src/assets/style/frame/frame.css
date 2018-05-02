@@ -23,10 +23,11 @@ body {
 }
 
 
+
 /*header*/
 
 .page_header {
-    height: 100px;
+    height: var(--headerHeight);
     border-bottom: 1px solid #EAEAEA;
     position: relative;
     background-color: #FAFAFA;
@@ -111,6 +112,7 @@ body {
 }
 
 
+
 /*page_body*/
 
 .page_body {
@@ -122,11 +124,12 @@ body {
 }
 
 
+
 /*page_footer*/
 
 .page_footer {
     position: relative;
-    height: 300px;
+    height: var(--footerHeight);
     background-color: #E8E8E8;
     color: var(--commonFontColor2);
     font-size: 13px;

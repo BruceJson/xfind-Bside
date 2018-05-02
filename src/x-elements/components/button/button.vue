@@ -33,5 +33,6 @@ export default {
 
 </script>
 <style type="text/css">
+@import '../../styles/button.css';
 
 </style>

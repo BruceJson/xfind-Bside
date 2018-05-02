@@ -7,7 +7,7 @@ import iview from 'iview';
 // import 'iview/dist/styles/iview.css';
 Vue.use(iview);
 
-import comps from '@/components';
+import comps from '@/x-elements';
 Vue.use(comps);
 
 
