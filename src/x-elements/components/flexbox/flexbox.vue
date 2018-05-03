@@ -1,5 +1,5 @@
 <template>
-    <div class='x_flexbox' :style="{'flex-direction': direction, 'flex-grow': full ? 1 : 'initial'}">
+    <div class='x_flexbox' :style="styleObj">
         <slot></slot>
     </div>
 </template>
@@ -18,6 +18,24 @@ export default {
         center: {
             type: Boolean,
             default: false
+        },
+        justifyContent: {
+            type: String,
+            default: 'initial'
+        },
+        alignItems: {
+            type: String,
+            default: 'initial'
+        }
+    },
+    computed: {
+        styleObj() {
+            return {
+                'flex-direction': this.direction,
+                'justify-content': this.center ? 'center' : this.justifyContent,
+                'align-items': this.center ? 'center' : this.alignItems,
+                'flex-grow': this.full ? 1 : 'initial'
+            }
         }
     }
 };

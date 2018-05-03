@@ -182,6 +182,9 @@
 
 
 /*margin*/
+.margin_top_0 {
+    margin-top: 0px !important;
+}
 
 .margin_top_5 {
     margin-top: 5px;

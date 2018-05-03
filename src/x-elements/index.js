@@ -3,7 +3,8 @@ import Flexbox from './components/flexbox';
 
 var comps = {
     XButton,
-    Flexbox
+    Flexbox,
+    FlexItem: Flexbox.flexItem
 };
 
 const install = function (Vue, opts = {}) {

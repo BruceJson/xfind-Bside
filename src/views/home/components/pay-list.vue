@@ -1,6 +1,5 @@
 <template>
     <div class='pay_list'>
-
         <Page class='align_center' :total="100"></Page>
     </div>
 </template>

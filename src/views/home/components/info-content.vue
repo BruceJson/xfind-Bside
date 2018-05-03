@@ -11,7 +11,7 @@
                 <p class='title'>发布的职位</p>
                 <x-button class='xbtn xbtn_border xbtn_bradius btn_job_manage' :padding='[14, 27]' :fontsize='16'>职位管理</x-button>
             </Flexbox>
-            <Flexbox direction='column' :full='true' class='item'>
+            <Flexbox direction='column' :full='true' :center='true' class='item'>
                 <i-circle :percent="80" :stroke-color='circleColor' class='circle'>
                     <p class="demo-Circle-inner" style="font-size:28px">
                         <span class='span1'>40</span>
@@ -21,7 +21,7 @@
                 <p class='title'>收到的简历</p>
                 <x-button class='xbtn xbtn_border xbtn_bradius btn_job_manage' :padding='[14, 27]' :fontsize='16'>简历管理</x-button>
             </Flexbox>
-            <Flexbox direction='column' :full='true' class='item'>
+            <Flexbox direction='column' :full='true' :center='true' class='item'>
                 <i-circle :percent="80" :stroke-color='circleColor' class='circle'>
                     <p class="demo-Circle-inner" style="font-size:28px">
                         <span class='span1'>40</span>
@@ -31,7 +31,7 @@
                 <p class='title'>选材库简历</p>
                 <x-button class='xbtn xbtn_border xbtn_bradius btn_job_manage' :padding='[14, 27]' :fontsize='16'>企业人才库</x-button>
             </Flexbox>
-            <Flexbox direction='column' :full='true' class='item'>
+            <Flexbox direction='column' :full='true' :center='true' class='item'>
                 <i-circle :percent="80" :stroke-color='circleColor' class='circle'>
                     <p class="demo-Circle-inner" style="font-size:28px">
                         <span class='span1'>40</span>
