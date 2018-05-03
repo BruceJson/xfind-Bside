@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 
 import iview from 'iview';
-// import 'iview/dist/styles/iview.css';
+import 'iview/dist/styles/iview.css';
 Vue.use(iview);
 
 import comps from '@/x-elements';

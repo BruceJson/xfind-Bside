@@ -1,0 +1,162 @@
+.part1 {
+    &>.item {
+        width: 1%;
+        align-items: center;
+        padding: 47px 0;
+        & .span1 {
+            font-size: 28px;
+            color: var(--mainColor);
+        }
+        & .span2 {
+            font-size: 16px;
+            color: var(--commonFontColor1);
+        }
+        &>.title {
+            font-size: 16px;
+            color: var(--commonFontColor1);
+            text-align: center;
+            margin: 20px 0;
+        }
+        &>.btn_job_manage {
+            font-size: 16px;
+        }
+    }
+}
+
+.part2 {
+    padding: 36px;
+    background-color: #F8F8F8;
+    &>.up {
+        align-items: center;
+        &>.p1 {
+            flex-grow: 1;
+            font-size: 19px;
+            color: #FF6868;
+        }
+        &>.p2 {
+            font-size: 17px;
+            color: var(--commonFontColor2);
+        }
+    }
+    &>.down {
+        align-items: center;
+        margin-top: 20px;
+        &>.p1 {
+            flex-grow: 1;
+            font-size: 22px;
+            color: var(--commonFontColor1);
+            &>span {
+                color: var(--mainColor);
+            }
+        }
+        &>.a1 {
+            display: block;
+            color: var(--mainColor);
+            font-size: 17px;
+        }
+    }
+}
+
+.part3 {
+    padding-top: 47px;
+    &>.title {
+        font-size: 23px;
+        color: var(--commonFontColor1);
+        text-align: center;
+        &>p {
+            display: inline-block;
+            border-bottom: 2px solid var(--mainColor);
+            padding-bottom: 8px;
+        }
+    }
+
+    &>.recommand_list {
+        margin-top: 20px;
+        &>.item {
+            width: 380px;
+            height: 263px;
+            border: 1px solid #D4D4D4;
+            padding: 20px 20px 0;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            float: left;
+            &:nth-child(3n-2) {
+                margin-left: 0;
+            }
+            &>.up {
+                display: flex;
+                align-items: center;
+                &>img {
+                    width: 105px;
+                    height: 105px;
+                    border-radius: 50%;
+                    display: block;
+                }
+                &>.content {
+                    flex: 1;
+                    padding-left: 11px;
+                    &>.line1 {
+                        margin-bottom: 28px;
+                        display: flex;
+                        align-items: center;
+                        &>.p1 {
+                            font-size: 20px;
+                            color: var(--commonFontColor1);
+                        }
+                        &>.p2 {
+                            font-size: 24px;
+                            color: var(--mainColor);
+                            margin-left: 25px;
+                        }
+                    }
+                    &>.line2 {
+                        color: var(--commonFontColor2);
+                        &>span {
+                            display: inline-block;
+                            &:nth-last-child(1) .span2 {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            &>.down {
+                &>.progress_box {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 22px;
+                    & .progress {
+                        flex: 1;
+                        padding-left: 10px;
+                        & .ivu-progress-outer {
+                            padding-right: 0;
+                        }
+
+                        & .ivu-progress-bg {
+                            background-color: #2385F7;
+                        }
+                    }
+                    & .progress_info {
+                        color: #FF7F7F;
+                        position: absolute;
+                        left: 46%;
+                        top: 0px;
+                        font-size: 13px;
+                    }
+                }
+                &>.time_box {
+                    display: flex;
+                    margin-top: 22px;
+                    &>p {
+                        color: var(--commonFontColor2);
+                        flex: 1;
+                    }
+                    &>.a1 {
+                        display: block;
+                        color: var(--mainColor);
+                    }
+                }
+            }
+        }
+    }
+}

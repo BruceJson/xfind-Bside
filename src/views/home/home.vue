@@ -34,13 +34,24 @@
                 </div>
             </div>
         </div>
+        <div class='home_content'>
+            <div class='content_inner_width'>
+                <!-- info-content -->
+                <info-content></info-content>
+            </div>
+        </div>
     </div>
 </template>
 <script type="text/javascript">
-import '@pages/home.css';
+import '@pages/home/home.css';
+
+import InfoContent from './components/info-content.vue';
 
 export default {
-    name: 'home'
+    name: 'home',
+    components: {
+        InfoContent
+    }
 };
 
 </script>

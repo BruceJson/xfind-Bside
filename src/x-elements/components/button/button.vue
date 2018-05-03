@@ -9,11 +9,13 @@ export default {
 	props: {
 		padding: {
 			type: Array,
-			default: [10, 25]
+			default: function () {
+				return [10, 25]; // x y
+			}
 		},
 		fontsize: {
 			type: Number,
-			default: 14
+			default: '14'
 		}
 	},
 	data() {

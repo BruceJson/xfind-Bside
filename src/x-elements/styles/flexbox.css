@@ -1,1 +1,3 @@
-.x_flexbox {}
+.x_flexbox {
+    display: flex;
+}
