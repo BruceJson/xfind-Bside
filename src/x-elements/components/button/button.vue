@@ -1,5 +1,5 @@
 <template>
-	<button :style="{padding: btnPadding, 'font-size': btnFontsize}">
+	<button :style="styles">
 		<slot></slot>
 	</button>
 </template>
@@ -14,21 +14,32 @@ export default {
 			}
 		},
 		fontsize: {
-			type: Number,
+			type: [Number, String],
 			default: '14'
+		},
+		width: {
+			type: [Number, String]
+		},
+		color: {
+			type: String
 		}
 	},
 	data() {
 		return {};
 	},
 	computed: {
+		styles() {
+			return {
+				'padding': this.btnPadding,
+				'font-size': this.fontsize + 'px',
+				'width': /\%/g.test(this.width) ? this.width : (this.width + 'px'),
+				'color': this.color
+			}
+		},
 		btnPadding() {
 			const y = this.padding[0];
 			const x = this.padding[1];
 			return `${y}px ${x}px`;
-		},
-		btnFontsize() {
-			return this.fontsize + 'px';
 		}
 	}
 };

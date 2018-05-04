@@ -1,10 +1,18 @@
 import XButton from './components/button';
 import Flexbox from './components/flexbox';
+import {
+    Tab,
+    TabItem
+} from './components/tab';
+import XLink from './components/link';
 
 var comps = {
     XButton,
     Flexbox,
-    FlexItem: Flexbox.flexItem
+    FlexItem: Flexbox.flexItem,
+    Tab,
+    TabItem,
+    XLink
 };
 
 const install = function (Vue, opts = {}) {
