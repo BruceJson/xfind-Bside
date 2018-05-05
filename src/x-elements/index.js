@@ -5,6 +5,7 @@ import {
     TabItem
 } from './components/tab';
 import XLink from './components/link';
+import IdentifyCode from './components/identify';
 
 var comps = {
     XButton,
@@ -12,10 +13,11 @@ var comps = {
     FlexItem: Flexbox.flexItem,
     Tab,
     TabItem,
-    XLink
+    XLink,
+    IdentifyCode
 };
 
-const install = function (Vue, opts = {}) {
+const install = function(Vue, opts = {}) {
     if (install.installed) return;
 
     Object.keys(comps).forEach(key => {

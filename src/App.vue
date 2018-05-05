@@ -1,9 +1,9 @@
 <template>
 	<div id="app" class='page_layout fixed_header'>
 		<div class='layout_content'>
-			<x-header v-if='$route.name !== "login"'></x-header>
-			<x-body :class='{margin_top_0: $route.name==="login" }'></x-body>
-			<x-footer v-if='$route.name !== "login"'></x-footer>
+			<x-header v-if='$route.name && ($route.name.indexOf("login") === -1)'></x-header>
+			<x-body :class='{margin_top_0: $route.name && ($route.name.indexOf("login") > -1) }'></x-body>
+			<x-footer v-if='$route.name && ($route.name.indexOf("login") === -1)'></x-footer>
 		</div>
 	</div>
 </template>
@@ -17,6 +17,10 @@ export default {
 		XHeader,
 		XBody,
 		XFooter
+	},
+	data() {
+		console.log(this.$router, this.$route);
+		return {};
 	}
 }
 

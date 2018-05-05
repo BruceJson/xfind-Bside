@@ -82,11 +82,21 @@
 
 
 
+
+
+
+
+
+
+
 /*密码登录*/
 
-.password_login_box {
+.content_login_box {
 	&>.line {
-		margin-bottom: 25px;
+		margin-bottom: 15px;
+		&:nth-last-child(1) {
+			margin-bottom: 0;
+		}
 	}
 	&>.line1 {
 		text-align: right;
@@ -125,6 +135,86 @@
 		&>img {
 			cursor: pointer;
 			margin-left: 10px;
+		}
+	}
+}
+
+
+
+
+/*验证码登录*/
+
+.identify_login_box {
+	&>.line3 {
+		&>.input_box {
+			height: 48px;
+			position: relative;
+			margin-right: 25px;
+			&>input {
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background-color: #F0F0F0;
+				border: none;
+				padding: 0 20px;
+				font-size: 16px;
+				border-radius: 4px;
+			}
+		}
+		&>.identify_code_box {
+			position: relative;
+			&>.refresh_code {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+	&>.line4 {
+		&>.input_box {
+			height: 48px;
+			position: relative;
+			margin-right: 25px;
+			&>input {
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background-color: #F0F0F0;
+				border: none;
+				padding: 0 20px;
+				font-size: 16px;
+				border-radius: 4px;
+			}
+		}
+	}
+}
+
+
+
+
+/*注册*/
+
+.regist_login_box {
+	&>.line4 {
+		&>.input_box {
+			height: 48px;
+			position: relative;
+			margin-right: 25px;
+			&>input {
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 100%;
+				background-color: #F0F0F0;
+				border: none;
+				padding: 0 20px;
+				font-size: 16px;
+				border-radius: 4px;
+			}
 		}
 	}
 }

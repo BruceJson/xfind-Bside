@@ -10,7 +10,6 @@ Vue.use(iview);
 import comps from '@/x-elements';
 Vue.use(comps);
 
-
 // css
 import '@/assets/style/main.css';
 
@@ -20,10 +19,10 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-    el: '#app',
-    router,
-    components: {
-        App
-    },
-    template: '<App/>'
+	el: '#app',
+	router,
+	components: {
+		App
+	},
+	template: '<App/>'
 })

@@ -3,7 +3,7 @@
         <slot></slot>{{showArrow ? '>>' : ''}}</router-link>
 </template>
 <script type="text/javascript">
-import colorVariable from '@/assets/style/variables.js';
+import colorVariables from '@style/variables.js';
 import '../../styles/link.css';
 export default {
     name: 'x-link',
@@ -22,7 +22,7 @@ export default {
         },
         color: {
             type: String,
-            default: colorVariable.mainColor
+            default: colorVariables.mainColor
         }
     },
     computed: {

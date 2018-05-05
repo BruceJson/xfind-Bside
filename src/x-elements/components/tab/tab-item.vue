@@ -16,6 +16,12 @@ export default {
         },
         'activeClass': {
             type: String
+        },
+        'islink': {
+            type: Boolean
+        },
+        'path': {
+            type: String
         }
     },
     methods: {
@@ -26,9 +32,13 @@ export default {
 
             this.selected = true;
 
-            this.$parent.$emit('input', this.tabIndex);
+            this.$parent.currentIndex = this.tabIndex;
 
             this.$emit('on-item-click', this.tabIndex);
+
+            if (this.islink && this.path) {
+                this.$router.push({ path: this.path });
+            }
         }
     },
     data() {

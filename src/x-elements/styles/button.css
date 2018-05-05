@@ -1,5 +1,6 @@
 .xbtn {
 	line-height: 1;
+	display: block;
 }
 
 .xbtn_fill {
